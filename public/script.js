@@ -70,8 +70,6 @@ setInterval(() => {
     flamingoCurrentImg++;
     flamingoCurrentImg %= flamingoImages.length;
     let imgUrl = `url('${flamingoImages[flamingoCurrentImg]}')`;
-    console.log("url('./images/icon_klingon.png')");
-    console.log(imgUrl);
     document.getElementById("flamingo-logo").style.backgroundImage = imgUrl;
     // console.log(imgUrl);
 }, 3000);

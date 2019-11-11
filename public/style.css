@@ -273,10 +273,34 @@ h4{
 #flamingo-logo {
     position: absolute;
     background-image: url('./images/icon_valyrian.png');
+    background-image: url('./images/icon_klingon.png');
+    background-image: url('./images/icon_elvish.png');
+    background-image: url('./images/icon_dothraki.png');
     width: 100%;
     height: 100%;
     background-size: cover;
-    transition: background-image 1s ease-in-out;
+    transition: background-image 1.5s ease-in-out;
+}
+
+.flamingo-decscription{
+    position: absolute;
+    padding: 10px;
+    background: #4c4c4c6b;
+    border-radius: 0px 0px 10px 0px;
+    color: white;
+}
+
+.flamingo-decscription > a {
+    color: white;
+    text-decoration: none;
+}
+
+.vibes-logo {
+    background-image: url(./images/icon_vibes.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
 }
 
 @-webkit-keyframes fadein {
