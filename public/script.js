@@ -1,4 +1,13 @@
-var toastElement;
+let toastElement;
+
+let flamingoImages = [
+    './images/icon_dothraki.png',
+    './images/icon_elvish.png',
+    './images/icon_klingon.png',
+    './images/icon_valyrian.png',
+]
+
+let flamingoCurrentImg = 0;
 
 window.addEventListener('load', function () {
     toastElement = document.getElementById("toast");
@@ -34,7 +43,7 @@ function mailClicked() {
     copyToClipboard("dan784@gmail.com");
 }
 
-//stack overflow card
+//get stack overflow card
 axios.get('/medias/so/1606811').then(res => {
     let data = res.data;
     let repDiv = document.getElementById('so-rep');
@@ -54,4 +63,15 @@ axios.get('/medias/so/1606811').then(res => {
         let bronzeDiv = document.getElementById('so-gold');
         bronzeDiv.innerText = data.badges.gold
     }
-})
+});
+
+//cycle flamingo images
+setInterval(() => {
+    flamingoCurrentImg++;
+    flamingoCurrentImg %= flamingoImages.length;
+    let imgUrl = `url('${flamingoImages[flamingoCurrentImg]}')`;
+    console.log("url('./images/icon_klingon.png')");
+    console.log(imgUrl);
+    document.getElementById("flamingo-logo").style.backgroundImage = imgUrl;
+    // console.log(imgUrl);
+}, 3000);
