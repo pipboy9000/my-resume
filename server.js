@@ -16,4 +16,6 @@ app.get('/medias/so/:id', async function (req, res) {
     res.send(d);
 })
 
-app.listen(3000)
+var port = process.env.PORT || 3000;
+
+app.listen(port);
