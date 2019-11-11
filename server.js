@@ -12,6 +12,7 @@ app.get('/', function (req, res) {
 //stack overflow
 app.get('/medias/so/:id', async function (req, res) {
     let d = await medias.getStackOverflowData(req.params.id);
+    res.setHeader('Content-Type', 'application/json');
     res.send(d);
 })
 

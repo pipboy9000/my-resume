@@ -113,6 +113,14 @@ h4{
 .footer{
     text-align: center;
     padding:20px;
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    background: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
 }
 
 #toast{
@@ -146,6 +154,120 @@ h4{
     bottom: -50px;
     opacity: 1;
     animation: fadeout 0.5s;
+}
+
+.portfolio {
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    background: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 238px;
+    height: 238px;
+    border: 1px solid #dae0e5;
+    margin: 10px;
+    box-shadow: 0 5px 10px #0000002b;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-bg {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background: #f1f4f6;
+}
+
+.card-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.card-details{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.badges {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #686d71;
+    width: 100%;
+    bottom: 15px;
+}
+
+.badges > .bronze {
+    background-color: #f8e9dd;
+    border: 1px solid #f0decb;
+}
+
+.badges > .silver {
+    background-color: #eaebec;
+    border: 1px solid #dddee0;
+}
+
+.badges > .gold {
+    background-color: #fffae6;
+    border: 1px solid #ece5c6;
+}
+
+.badges > div {
+        width: 40px;
+        height: 40px;
+        background: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;
+}
+
+.so-rep {
+    text-align: center;
+    font-size: 14px;
+    color: grey;
+}
+
+#so-rep {
+    font-size: 58px;
+    color: black;
+}
+
+.so-rep > span {
+    font-size: 14px;
+    color: gray;
+}
+
+.stack-logo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-icon.svg?v=f13ebeedfa9e');
+    background-position: center;
+    background-size: 180px;
+    background-repeat: no-repeat;
+    opacity: 0.35;
 }
 
 @-webkit-keyframes fadein {
