@@ -44,6 +44,14 @@ h1 {
     padding-top: 5px;
 }
 
+.header {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-content: space-around;
+    justify-content: space-between;
+}
+
 .header-items {
     padding-top: 10px;
 }
@@ -61,6 +69,15 @@ h1 {
     color: #808486;
     font-size: 16px;
     margin-right: 7px;
+}
+
+.profile-pic{
+    background-size: 150px;
+    border-radius: 150px;
+    min-width: 150px;
+    width: 150px;
+    height: 150px;
+    background-image: url(./images/me.png);
 }
 
 ul {
