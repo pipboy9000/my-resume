@@ -7,6 +7,7 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin: 20px;
 }
 
 body::after{
@@ -15,13 +16,13 @@ body::after{
  }
 
 .container{
+    box-shadow: 0px 10px 20px #0000004d;
     max-width: 780px;
     margin-left: auto;
     margin-right: auto;
     padding: 40px;
     background: white;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     border-radius: 5px;
 }
 
@@ -116,6 +117,7 @@ h4{
 }
 
 .footer{
+    box-shadow: 0px 10px 20px #0000004d;
     text-align: center;
     padding:20px;
     max-width: 780px;
@@ -123,7 +125,6 @@ h4{
     margin-right: auto;
     padding: 40px;
     background: white;
-    margin-top: 30px;
     margin-bottom: 30px;
     border-radius: 5px;
 }
@@ -162,6 +163,7 @@ h4{
 }
 
 .portfolio {
+    box-shadow: 0px 10px 20px #0000004d;
     max-width: 780px;
     margin-left: auto;
     margin-right: auto;
@@ -331,6 +333,17 @@ h4{
 
 .mixtape-logo {
     background-image: url(./images/icon_mixtape.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    background-size: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.blogger-logo {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/3/31/Blogger.svg);
     width: 100%;
     height: 100%;
     background-size: cover;
