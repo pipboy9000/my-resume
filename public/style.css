@@ -305,6 +305,41 @@ h4{
     position: absolute;
 }
 
+.mixtape-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(180deg,#00a2ff,#4acaff);
+}
+
+.mixtape-wave {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(./images/mixtape-wave.png);
+    background-size: 240px;
+    background-position: center;
+    background-repeat: repeat-x;
+    animation: wave 15s linear infinite;
+}
+
+
+@-webkit-keyframes wave {
+    from {background-position-x: 0px;}
+    to{background-position-x: 240px;}
+}
+
+.mixtape-logo {
+    background-image: url(./images/icon_mixtape.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    background-size: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 @-webkit-keyframes fadein {
     from {bottom: 0; opacity: 0;}
     to {bottom: 30px; opacity: 1;}
