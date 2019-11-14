@@ -378,7 +378,7 @@ h4{
     }
 
     .mixtape-logo {
-        background-size: 270px;
+        background-size: 200px;
     }
 
     p {
@@ -407,4 +407,28 @@ h4{
         width: 100px;
         height: 100px;
     }
+
+    .card {
+        width: 220px;
+        height: 230px;
+        margin: 30px;
+    }
+}
+
+.cloud {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    margin-top: -40px;
+}
+
+.cloud > li {
+    background: #00a2ff;
+    padding: 5px;
+    color: white;
+    margin: 5px;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
