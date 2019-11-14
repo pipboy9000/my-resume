@@ -30,6 +30,7 @@ h2{
     color: #B48F6B !important;
     font-weight: 100;
     font-size: 28px;
+    padding-right: 30px;
 }
 
 h1 {
@@ -138,19 +139,6 @@ h4{
     display: inline-block;
 }
 
-.footer{
-    box-shadow: 0px 10px 20px #0000004d;
-    text-align: center;
-    padding:20px;
-    max-width: 780px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 40px;
-    background: white;
-    margin-bottom: 30px;
-    border-radius: 5px;
-}
-
 #toast{
     position: absolute;
     text-align: center;
@@ -182,18 +170,6 @@ h4{
     bottom: -50px;
     opacity: 1;
     animation: fadeout 0.5s;
-}
-
-.portfolio {
-    box-shadow: 0px 10px 20px #0000004d;
-    max-width: 780px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 40px;
-    background: white;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border-radius: 5px;
 }
 
 .cards{
@@ -394,3 +370,41 @@ h4{
     from {bottom: 30px; opacity: 1;}
     to {bottom: 0; opacity: 0;}
   }
+
+  @media only screen and (max-width: 920px) {
+    .card{
+        width:290px;
+        height:290px;
+    }
+
+    .mixtape-logo {
+        background-size: 270px;
+    }
+
+    p {
+        padding-right: 30px;
+    }
+}
+
+  @media only screen and (max-width: 650px) {
+    body {
+        margin: 0;
+    }
+
+    .container{
+        border-radius: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        margin-top: 5px;
+    }
+
+    .profile-pic {
+        background-size: 100px;
+        border-radius: 150px;
+        min-width: 100px;
+        width: 100px;
+        height: 100px;
+    }
+}

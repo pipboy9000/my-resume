@@ -44,26 +44,26 @@ function mailClicked() {
 }
 
 //get stack overflow card
-axios.get('/medias/so/1606811').then(res => {
-    let data = res.data;
-    let repDiv = document.getElementById('so-rep');
-    repDiv.innerText = data.reputation;
+// axios.get('/medias/so/1606811').then(res => {
+//     let data = res.data;
+//     let repDiv = document.getElementById('so-rep');
+//     repDiv.innerText = data.reputation;
 
-    if (data.badges.bronze) {
-        let bronzeDiv = document.getElementById('so-bronze');
-        bronzeDiv.innerText = data.badges.bronze
-    }
+//     if (data.badges.bronze) {
+//         let bronzeDiv = document.getElementById('so-bronze');
+//         bronzeDiv.innerText = data.badges.bronze
+//     }
 
-    if (data.badges.silver) {
-        let bronzeDiv = document.getElementById('so-silver');
-        bronzeDiv.innerText = data.badges.silver
-    }
+//     if (data.badges.silver) {
+//         let bronzeDiv = document.getElementById('so-silver');
+//         bronzeDiv.innerText = data.badges.silver
+//     }
 
-    if (data.badges.gold) {
-        let bronzeDiv = document.getElementById('so-gold');
-        bronzeDiv.innerText = data.badges.gold
-    }
-});
+//     if (data.badges.gold) {
+//         let bronzeDiv = document.getElementById('so-gold');
+//         bronzeDiv.innerText = data.badges.gold
+//     }
+// });
 
 //cycle flamingo images
 setInterval(() => {
