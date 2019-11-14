@@ -35,7 +35,12 @@ h2{
 h1 {
     font-weight: 500!important;
     font-family: "Lato", Arial, Helvetica, "Noto Sans Devanagari", "Noto Sans CJK SC Thin", "Noto Sans SC", "Noto Sans Hebrew", sans-serif !important;
-    color: #22405c;
+    color: #86b4de;
+}
+
+h1 > a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .title2{
