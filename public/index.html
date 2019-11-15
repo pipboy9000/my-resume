@@ -239,19 +239,29 @@
     </div>
 
     <div class="container">
+        <h3>
+            FEEDBACK
+        </h3>
         <p class="center-text">
-            💬
+            <span class="emojis">💬</span>
             </br>
-            </br>
-            This document is open for comments, if you think some information is missing or unclear please leave a
+            If you think some information is missing or unclear please leave a
             comment and I will do my best to fill in or change it.
             </br>
             Have a sweet day :)
         </p>
+        <div class="form">
+            <label for="nameInput"></label>
+            <input id="nameInput" name="name" type="text" placeholder="Name">
 
-        <input type="email">
-        <input type="text">
-        <input type="submit">
+            <label for="emailInput"></label>
+            <input id="emailInput" name="email" type="text" placeholder="Email">
+
+            <label for="msgInput"></label>
+            <textarea id="msgInput" name="msg"></textarea>
+
+            <button type="submit" onclick="sendFeedback();">Send</button>
+        </div>
     </div>
 </body>
 
