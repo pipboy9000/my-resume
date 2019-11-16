@@ -52,14 +52,75 @@ setInterval(() => {
     // console.log(imgUrl);
 }, 3000);
 
+function validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+
+function validateFeedback(feedback) {
+
+    let valid = true;
+
+    let labels = document.getElementsByTagName('label');
+    for (let l of labels) {
+        l.classList.remove('invalid');
+    }
+
+    if (!feedback.name) {
+        let nameLable = document.querySelector('[for="nameInput"]');
+        nameLable.classList.add('invalid');
+        valid = false;
+    }
+
+    if (!validateEmail(feedback.email)) {
+        let emailLabel = document.querySelector('[for="emailInput"]');
+        emailLabel.classList.add('invalid');
+        valid = false;
+    }
+
+    if (!feedback.msg) {
+        let emailLabel = document.querySelector('[for="msgInput"]');
+        emailLabel.classList.add('invalid');
+        valid = false;
+    }
+
+    return valid;
+}
+
+function setSending() {
+    let formElements = document.getElementsByClassName('formElement');
+    for (let el of formElements) {
+        el.disabled = true;
+    }
+
+    document.querySelector('button > span').style.display = 'none'
+    document.querySelector('.spinner').style.display = 'block'
+}
+
 function sendFeedback() {
 
     let feedback = {}
-    feedback.name = document.getElementById('nameInput').value;
-    feedback.email = document.getElementById('emailInput').value;
-    feedback.msg = document.getElementById('msgInput').value;
+
+    feedback.name = document.getElementById('nameInput').value.trim();
+    feedback.email = document.getElementById('emailInput').value.trim();
+    feedback.msg = document.getElementById('msgInput').value.trim();
+
+    if (!validateFeedback(feedback))
+        return;
+
+    setSending();
 
     axios.post('/feedback', feedback).then(res => {
-        console.log(res);
+        let btnText = document.querySelector('button > span')
+        btnText.style.display = 'block';
+
+        let spinner = document.querySelector('.spinner');
+        spinner.style.display = 'none';
+
+        if (res.data == 'success') {
+            btnText.innerText = 'Thank You!';
+        } else {
+            btnText.innerText = 'Error';
+        }
     })
 }

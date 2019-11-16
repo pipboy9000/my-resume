@@ -252,15 +252,18 @@
         </p>
         <div class="form">
             <label for="nameInput"></label>
-            <input id="nameInput" name="name" type="text" placeholder="Name">
+            <input id="nameInput" name="name" type="text" placeholder="Name" class="formElement" />
 
             <label for="emailInput"></label>
-            <input id="emailInput" name="email" type="text" placeholder="Email">
+            <input id="emailInput" name="email" type="text" placeholder="Email" class="formElement" />
 
             <label for="msgInput"></label>
-            <textarea id="msgInput" name="msg"></textarea>
+            <textarea id="msgInput" name="msg" maxlength="200" placeholder="Message" class="formElement"></textarea>
 
-            <button type="submit" onclick="sendFeedback();">Send</button>
+            <button type="submit" onclick="sendFeedback();" class="formElement">
+                <span>Send</span>
+                <div class="spinner"></div>
+            </button>
         </div>
     </div>
 </body>

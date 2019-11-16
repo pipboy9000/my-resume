@@ -13,8 +13,14 @@ async function getDb() {
 }
 
 async function save(feedback) {
-    let db = await getDb();
-    db.collection('feedback').insertOne(feedback);
+    try {
+        let db = await getDb();
+        db.collection('feedback').insertOne(feedback);
+        return true;
+    } catch (e) {
+        console.log(e);
+        return false;
+    }
 }
 
 module.exports = {
