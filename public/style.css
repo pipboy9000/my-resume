@@ -472,6 +472,7 @@ textarea {
     border-radius: 4px;
     padding: 10px;
     box-sizing: border-box;
+    resize: vertical;
 }
 
 button {

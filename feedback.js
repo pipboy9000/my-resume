@@ -15,6 +15,7 @@ async function getDb() {
 async function save(feedback) {
     try {
         let db = await getDb();
+        feedback.updated = new Date().getTime();
         db.collection('feedback').insertOne(feedback);
         return true;
     } catch (e) {
