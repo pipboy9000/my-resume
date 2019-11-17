@@ -548,6 +548,7 @@ input:focus {outline:0;}
 
   .footer > * {
       margin: 0 15px;
+      cursor: pointer;
   }
 
   .info {
