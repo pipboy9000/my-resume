@@ -52,6 +52,10 @@ setInterval(() => {
     // console.log(imgUrl);
 }, 3000);
 
+setInterval(() => {
+    document.getElementById("house-party-bg").style.backgroundColor = getRandomColor();
+}, 1500)
+
 function validateEmail(email) {
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
@@ -123,6 +127,20 @@ function sendFeedback() {
             btnText.innerText = 'Error';
         }
     })
+}
+
+var lastHue = 0;
+
+function rand(min, max) {
+    return min + Math.random() * (max - min);
+}
+
+function getRandomColor() {
+    var h = (lastHue + 107) % 360 + rand(10, 30); //to make the hues different each time
+    lastHue = h;
+    var s = rand(60, 80);
+    var l = rand(60, 80);
+    return 'hsl(' + h + ',' + s + '%,' + l + '%)';
 }
 
 function showInfo() {
