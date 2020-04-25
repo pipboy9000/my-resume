@@ -5,13 +5,6 @@ let y;
 
 let angle;
 
-function mark(x, y) {
-    ctx.strokeStyle = "red";
-    ctx.beginPath()
-    ctx.arc(x, y, 10, 0, Math.PI * 2);
-    ctx.stroke();
-}
-
 function drawNextSegment() {
 
     //fade last
@@ -40,8 +33,6 @@ function drawNextSegment() {
     let cornerCenterX = nextX + (Math.cos(angle + Math.PI / 2)) * cornerRad;
     let cornerCenterY = nextY + (Math.sin(angle + Math.PI / 2)) * cornerRad;
 
-    // mark(cornerCenterX, cornerCenterY);
-
     ctx.beginPath();
     ctx.arc(cornerCenterX, cornerCenterY, cornerRad, angle - Math.PI / 2, nextAngle - Math.PI / 2, false);
     ctx.stroke();
@@ -49,8 +40,6 @@ function drawNextSegment() {
     //set to arc endpoint
     x = cornerCenterX + Math.cos(nextAngle - Math.PI / 2) * cornerRad;
     y = cornerCenterY + Math.sin(nextAngle - Math.PI / 2) * cornerRad;
-
-    // mark(x, y);
 
     angle = nextAngle;
 
