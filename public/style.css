@@ -180,25 +180,25 @@ h4{
 
 .cards{
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .card {
-    margin: 30px;
+    margin: 10px;
     width: min-content;
+    cursor: pointer;
 }
 
 .cardBtn {
     width: 238px;
     height: 238px;
     border: 1px solid #dae0e5;
-    margin-bottom: 5px;
     box-shadow: 0 5px 10px #0000002b;
     border-radius: 5px;
     position: relative;
     overflow: hidden;
+    margin: 10px;
 }
 
 .cardInfo {
@@ -211,7 +211,6 @@ h4{
     transition: all 700ms;
     max-height: 0px;
     overflow: hidden;
-    font-size: 14px;
 }
 
 .cardInfo > h1 {
@@ -220,8 +219,10 @@ h4{
 }
 
 .cardInfo > p {
+    font-size: 14px;
     margin: 0;
     padding: 0;
+    color: #616161;
 }
 
 .cardInfo > a {
@@ -230,18 +231,16 @@ h4{
     color: white;
     padding: 10px;
     border-radius: 50px;
-    background: #86b4de;
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-    border-radius: 50px;
     display: inline-flex;
-    max-width: 120px;
+    max-width: 150px;
     align-items: center;
     justify-content: space-between;
+    overflow-wrap: break-word;
+    font-size: 13px;
 }
 
-.cardInfo > i {
+.cardInfo > a > i {
+    margin-left: 20px;
     font-size: 20px;
 }
 
