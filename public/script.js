@@ -149,3 +149,8 @@ function showInfo() {
 function hideInfo() {
     document.getElementById('info').style.display = 'none'
 }
+
+function cardClicked(card) {
+    let infoDiv = card.getElementsByClassName('cardInfo')[0];
+    infoDiv.classList.toggle('infoOpen');
+}

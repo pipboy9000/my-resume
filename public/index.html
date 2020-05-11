@@ -21,7 +21,7 @@
 </head>
 
 <script type="text/javascript" src="./script.js" type="module"></script>
-<script type="text/javascript" src="./CoolSnakes.js" type="module"></script>
+<!-- <script type="text/javascript" src="./CoolSnakes.js" type="module"></script> -->
 
 
 
@@ -163,7 +163,7 @@
         <h1>My Portfolio</h1>
         <h2>Here are some projects I have worked on recently</h2>
         <div class="cards">
-            <div class="card" title="Flamingo">
+            <div class="cardBtn" title="Flamingo">
                 <a href="https://play.google.com/store/apps/developer?id=Cognitus+Apps" target="_blank">
                     <div id="flamingo-logo">
 
@@ -175,22 +175,32 @@
                         target="_blank">iOS</a>
                 </div>
             </div>
-            <div class="card" title="Vibes">
+            <div class="cardBtn" title="Vibes">
                 <a href="http://vibes.netlify.com/#/" target="_blank">
                     <div class="vibes-logo">
 
                     </div>
                 </a>
             </div>
-            <div class="card" title="Magic Lab">
-                <a href="https://magic-lab.netlify.com/" target="_blank">
+            <div class="card" onclick="cardClicked(this)">
+                <div class="cardBtn" title="Magic Lab">
                     <div class="magic-lab">
-                        <!-- <canvas id="canvas" width="400" height="400" style="width: 100%; height: 100%;"></canvas> -->
                         <img src="images/level_7.png">
                     </div>
-                </a>
+                </div>
+                <div class="cardInfo" id="magic-lab-info">
+                    <h1>Magic Lab</h1>
+                    <p>
+                        A puzzle game based on unique visual effect. I made this game with vanilla Javascript and used
+                        HTML5 canvas.
+                    </p>
+                    </br>
+                    <a href="https://magic-lab.netlify.com/" target="_blank">
+                        Give it a try <i class="fas fa-chevron-circle-right"></i>
+                    </a>
+                </div>
             </div>
-            <!-- <div class="card" title="Mixtape">
+            <!-- <div class="cardBtn" title="Mixtape">
                 <a href="http://mixtape-app.herokuapp.com/#/" target="_blank">
                     <div class="mixtape-bg">
 
@@ -203,14 +213,14 @@
                     </div>
                 </a>
             </div> -->
-            <div class="card" title="House Party">
+            <div class="cardBtn" title="House Party">
                 <a href="https://house-party.netlify.com/" target="_blank">
                     <div class="house-party-bg" id="house-party-bg">
                     </div>
                 </a>
             </div>
             <h2>You can find out more about me through my blog and Stack Overflow profile</h2>
-            <div class="card" title="My Stack Overflow Profile">
+            <div class="cardBtn" title="My Stack Overflow Profile">
                 <div class="card-bg">
                 </div>
                 <div class="card-content">
@@ -229,7 +239,7 @@
                     </a>
                 </div>
             </div>
-            <div class="card" title="My Blog">
+            <div class="cardBtn" title="My Blog">
                 <a href="http://i-r-programmer.blogspot.com/" target="_blank">
                     <div class="blogger-logo">
 
@@ -250,7 +260,8 @@
                 <li>🎸</li>
             </ul>
             <p class="center-text">
-                I have many hobbies ranging from music to fire twirling, I’m a drummer in a band. I also enjoy surfing
+                I have many hobbies ranging from music to fire twirling, I’m a drummer in a band. I also enjoy
+                surfing
                 and snowboarding.
             </p>
         </div>

@@ -186,14 +186,69 @@ h4{
 }
 
 .card {
+    margin: 30px;
+    width: min-content;
+}
+
+.cardBtn {
     width: 238px;
     height: 238px;
     border: 1px solid #dae0e5;
-    margin: 10px;
+    margin-bottom: 5px;
     box-shadow: 0 5px 10px #0000002b;
     border-radius: 5px;
     position: relative;
     overflow: hidden;
+}
+
+.cardInfo {
+    border: 0px solid #de8686;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    opacity: 0;
+    transition: all 700ms;
+    max-height: 0px;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.cardInfo > h1 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.cardInfo > p {
+    margin: 0;
+    padding: 0;
+}
+
+.cardInfo > a {
+    background: #86b4de;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    background: #86b4de;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    display: inline-flex;
+    max-width: 120px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardInfo > i {
+    font-size: 20px;
+}
+
+.infoOpen {
+    max-height: 500px;
+    opacity: 1;
+    margin-top: 10px;
 }
 
 .card-bg {
@@ -390,7 +445,7 @@ h4{
   }
 
   @media only screen and (max-width: 800px) {
-    .card{
+    .cardBtn{
         width:290px;
         height:290px;
     }
@@ -431,10 +486,9 @@ h4{
         height: 100px;
     }
 
-    .card {
+    .cardBtn {
         width: 220px;
         height: 220px;
-        margin: 30px;
     }
 }
 
