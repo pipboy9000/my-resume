@@ -1,26 +1,32 @@
-html{
+html {
     font-family: "Lato", Arial, Helvetica, "Noto Sans Devanagari", "Noto Sans CJK SC Thin", "Noto Sans SC", "Noto Sans Hebrew", sans-serif !important;
     background: gray;
 }
 
-body{
+body {
     display: flex;
     align-items: center;
     flex-direction: column;
     margin: 0px;
+    font-family: "Rubik";
+    font-weight: 100;
 }
 
-body::after{
-    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
-    content:url(./images/icon_dothraki.png) url(./images/icon_elvish.png) url(./images/icon_klingon.png) url(./images/icon_valyrian.png);
- }
+body::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url(./images/icon_dothraki.png) url(./images/icon_elvish.png) url(./images/icon_klingon.png) url(./images/icon_valyrian.png);
+}
 
- /* first container */
- body > div:nth-child(2){
+/* first container */
+body>div:nth-child(2) {
     margin-top: 20px;
 }
 
-.container{
+.container {
     box-shadow: 0px 10px 20px #0000004d;
     max-width: 780px;
     width: 100%;
@@ -33,7 +39,13 @@ body::after{
     box-sizing: border-box;
 }
 
-h2{
+b {
+    color: #d96f4f;
+    font-family: "Roboto";
+    font-weight: 500;
+}
+
+h2 {
     color: #B48F6B !important;
     font-weight: 100;
     font-size: 28px;
@@ -41,17 +53,17 @@ h2{
 }
 
 h1 {
-    font-weight: 500!important;
+    font-weight: 500 !important;
     font-family: "Lato", Arial, Helvetica, "Noto Sans Devanagari", "Noto Sans CJK SC Thin", "Noto Sans SC", "Noto Sans Hebrew", sans-serif !important;
     color: #86b4de;
 }
 
-h1 > a {
+h1>a {
     color: inherit;
     text-decoration: none;
 }
 
-.title2{
+.title2 {
     font-family: sans-serif;
     padding-left: 12px;
     padding-top: 5px;
@@ -68,7 +80,7 @@ h1 > a {
 .header-item {
     font-size: 15px;
     color: #384347;
-    font-weight: 400!important;
+    font-weight: 400 !important;
     line-height: 15px;
     display: inline-block;
     padding-right: 16px;
@@ -76,13 +88,13 @@ h1 > a {
     padding-left: 10px;
 }
 
-.header-item > i {
+.header-item>i {
     color: #808486;
     font-size: 16px;
     margin-right: 7px;
 }
 
-.profile-pic{
+.profile-pic {
     background-size: 150px;
     border-radius: 150px;
     min-width: 150px;
@@ -99,12 +111,12 @@ li {
     padding-bottom: 0px;
 }
 
-li > span {
+li>span {
     display: block;
     margin-bottom: 12px;
 }
 
-li > p {
+li>p {
     padding-top: 0;
     padding-left: 10px;
 }
@@ -115,27 +127,27 @@ p {
     padding-bottom: 20px;
 }
 
-.section > p {
+.section>p {
     padding-top: 0;
     margin-top: 2px;
     margin-bottom: 30px;
 }
 
-.section > div {
+.section>div {
     margin-left: 10px;
     margin-top: 7px;
 }
 
-h3{
+h3 {
     color: #b2b4b6;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 4px;
     line-height: 17px;
-    border-bottom: 2px solid hsla(0,0%,72.5%,.2);
+    border-bottom: 2px solid hsla(0, 0%, 72.5%, .2);
 }
 
-h4{
+h4 {
     font-size: 12px;
     margin-top: 10px;
     margin-left: 10px;
@@ -144,7 +156,7 @@ h4{
     display: inline-block;
 }
 
-#toast{
+#toast {
     position: absolute;
     text-align: center;
     min-width: 250px;
@@ -158,11 +170,11 @@ h4{
     z-index: 999;
 }
 
-.header-items > :nth-child(1) {
+.header-items> :nth-child(1) {
     cursor: pointer;
 }
 
-.header-items > :nth-child(2) {
+.header-items> :nth-child(2) {
     cursor: pointer;
 }
 
@@ -178,7 +190,7 @@ h4{
     animation: fadeout 0.5s;
 }
 
-.cards{
+.cards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -213,19 +225,19 @@ h4{
     overflow: hidden;
 }
 
-.cardInfo > h1 {
+.cardInfo>h1 {
     margin: 0;
     margin-bottom: 10px;
 }
 
-.cardInfo > p {
+.cardInfo>p {
     font-size: 14px;
     margin: 0;
     padding: 0;
     color: #616161;
 }
 
-.cardInfo > a {
+.cardInfo>a {
     background: #86b4de;
     text-decoration: none;
     color: white;
@@ -239,7 +251,7 @@ h4{
     font-size: 13px;
 }
 
-.cardInfo > a > i {
+.cardInfo>a>i {
     margin-left: 20px;
     font-size: 20px;
 }
@@ -263,7 +275,7 @@ h4{
     height: 100%;
 }
 
-.card-details{
+.card-details {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -283,29 +295,29 @@ h4{
     bottom: 15px;
 }
 
-.badges > .bronze {
+.badges>.bronze {
     background-color: #f8e9dd;
     border: 1px solid #f0decb;
 }
 
-.badges > .silver {
+.badges>.silver {
     background-color: #eaebec;
     border: 1px solid #dddee0;
 }
 
-.badges > .gold {
+.badges>.gold {
     background-color: #fffae6;
     border: 1px solid #ece5c6;
 }
 
-.badges > div {
-        width: 40px;
-        height: 40px;
-        background: aliceblue;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 40px;
+.badges>div {
+    width: 40px;
+    height: 40px;
+    background: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
 }
 
 .so-rep {
@@ -319,12 +331,12 @@ h4{
     color: black;
 }
 
-.so-rep > span {
+.so-rep>span {
     font-size: 14px;
     color: gray;
 }
 
-.stack-logo{
+.stack-logo {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -344,7 +356,7 @@ h4{
     transition: background-image 1.5s ease-in-out;
 }
 
-.flamingo-decscription{
+.flamingo-decscription {
     position: absolute;
     padding: 10px;
     background: #4c4c4c6b;
@@ -352,7 +364,7 @@ h4{
     color: white;
 }
 
-.flamingo-decscription > a {
+.flamingo-decscription>a {
     color: white;
     text-decoration: none;
 }
@@ -369,7 +381,7 @@ h4{
     width: 100%;
     height: 100%;
     position: absolute;
-    background: linear-gradient(180deg,#00a2ff,#4acaff);
+    background: linear-gradient(180deg, #00a2ff, #4acaff);
 }
 
 .mixtape-wave {
@@ -385,8 +397,13 @@ h4{
 
 
 @-webkit-keyframes wave {
-    from {background-position-x: 0px}
-    to{background-position-x: 240px}
+    from {
+        background-position-x: 0px
+    }
+
+    to {
+        background-position-x: 240px
+    }
 }
 
 .mixtape-logo {
@@ -424,29 +441,57 @@ h4{
 }
 
 @-webkit-keyframes fadein {
-    from {bottom: 0; opacity: 0;}
-    to {bottom: 30px; opacity: 1;}
-  }
-  
-  @keyframes fadein {
-    from {bottom: 0; opacity: 0;}
-    to {bottom: 30px; opacity: 1;}
-  }
-  
-  @-webkit-keyframes fadeout {
-    from {bottom: 30px; opacity: 1;}
-    to {bottom: 0; opacity: 0;}
-  }
-  
-  @keyframes fadeout {
-    from {bottom: 30px; opacity: 1;}
-    to {bottom: 0; opacity: 0;}
-  }
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
 
-  @media only screen and (max-width: 800px) {
-    .cardBtn{
-        width:290px;
-        height:290px;
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .cardBtn {
+        width: 290px;
+        height: 290px;
     }
 
     .mixtape-logo {
@@ -457,18 +502,18 @@ h4{
         padding-right: 30px;
     }
 
-     /* first container */
-    body > div:nth-child(2){
+    /* first container */
+    body>div:nth-child(2) {
         margin-top: 0px;
     }
 }
 
-  @media only screen and (max-width: 750px) {
+@media only screen and (max-width: 750px) {
     body {
         margin: 0px;
     }
 
-    .container{
+    .container {
         border-radius: 0;
         padding: 20px;
     }
@@ -499,7 +544,7 @@ h4{
     margin-top: -40px;
 }
 
-.cloud > li {
+.cloud>li {
     background: #00a2ff;
     padding: 5px;
     color: white;
@@ -509,7 +554,7 @@ h4{
     padding-right: 10px;
 }
 
-.emojis{
+.emojis {
     display: flex;
     justify-content: center;
     font-size: 20px;
@@ -519,7 +564,7 @@ h4{
     line-height: 15px;
 }
 
-.emojis > li {
+.emojis>li {
     margin: 10px;
 }
 
@@ -573,50 +618,67 @@ button {
 }
 
 .invalid::after {
-    content:" *"; 
+    content: " *";
     color: #e32;
-    position: absolute; 
-    margin: 0px 0px 0px -20px; 
-    font-size: xx-large; 
-    padding: 0 5px 0 0; }
+    position: absolute;
+    margin: 0px 0px 0px -20px;
+    font-size: xx-large;
+    padding: 0 5px 0 0;
+}
 
-button:focus {outline:0;}
-textarea:focus {outline:0;}
-input:focus {outline:0;}
+button:focus {
+    outline: 0;
+}
+
+textarea:focus {
+    outline: 0;
+}
+
+input:focus {
+    outline: 0;
+}
 
 .spinner {
-    border: 5px solid #f3f3f3; /* Light grey */
-    border-top: 5px solid #00000000; /* Blue */
-    border-bottom: 5px solid #00000000; /* Blue */
+    border: 5px solid #f3f3f3;
+    /* Light grey */
+    border-top: 5px solid #00000000;
+    /* Blue */
+    border-bottom: 5px solid #00000000;
+    /* Blue */
     border-radius: 50%;
     animation: spin 2s linear infinite;
     width: 20px;
     height: 20px;
     display: none;
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
+}
 
-  .footer {
-      font-size: 50px;
-      color: white;
-      margin-bottom: 30px;
-  }
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
 
-  .footer > a {
-      color: white;
-      text-decoration: none;
-  }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
-  .footer > * {
-      margin: 0 15px;
-      cursor: pointer;
-  }
+.footer {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 30px;
+}
 
-  .info {
+.footer>a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer>* {
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.info {
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -624,15 +686,15 @@ input:focus {outline:0;}
     display: none;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .infoBg{
-      width: 100%;
-      height: 100%;
-      position: absolute;
-  }
+.infoBg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
 
-  .info-content {
+.info-content {
     background: white;
     text-align: center;
     max-width: 475px;
@@ -640,25 +702,26 @@ input:focus {outline:0;}
     width: 100%;
     padding: 25px;
     box-sizing: border-box;
-  }
+}
 
-  .closeBtn {
+.closeBtn {
     position: absolute;
     top: 10px;
     right: 25px;
     font-size: 60px;
     color: #ffffffed;
-  }
-
-  textarea {
-    font-family: Arial;
-    font-size: 14px;
-  }
-
-  .magic-lab {
-      background: black;
 }
 
-.magic-lab > img {
-width: 100%; height: 100%
+textarea {
+    font-family: Arial;
+    font-size: 14px;
+}
+
+.magic-lab {
+    background: black;
+}
+
+.magic-lab>img {
+    width: 100%;
+    height: 100%
 }
