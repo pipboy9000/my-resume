@@ -8,7 +8,7 @@ body {
     align-items: center;
     flex-direction: column;
     margin: 0px;
-    font-family: "Rubik";
+    font-family: 'Fredoka', sans-serif;
     font-weight: 100;
 }
 
@@ -39,10 +39,10 @@ body>div:nth-child(2) {
     box-sizing: border-box;
 }
 
-b {
-    color: #d96f4f;
-    font-family: "Roboto";
+h4 {
+    color: #ff8936;
     font-weight: 500;
+    display: inline-block;
 }
 
 h2 {
@@ -50,11 +50,18 @@ h2 {
     font-weight: 100;
     font-size: 28px;
     padding-right: 30px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.container > h2:first-of-type {
+    margin-top: 45px;
 }
 
 h1 {
-    font-weight: 500 !important;
-    font-family: "Lato", Arial, Helvetica, "Noto Sans Devanagari", "Noto Sans CJK SC Thin", "Noto Sans SC", "Noto Sans Hebrew", sans-serif !important;
+    font-family: "Varela round", Arial, Helvetica, "Noto Sans Devanagari", "Noto Sans CJK SC Thin", "Noto Sans SC", "Noto Sans Hebrew", sans-serif !important;
+    font-weight: 800;
+    font-size: 42px;
     color: #86b4de;
 }
 
@@ -77,15 +84,31 @@ h1>a {
     justify-content: space-between;
 }
 
+.header-items-container > h2 {
+    margin-top: 30px;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.date {
+    display: inline;
+    margin-right: 10px;
+}
+
+.header-items {
+    padding-top: 20px;
+}
+
 .header-item {
-    font-size: 15px;
-    color: #384347;
+    font-size: 16px;
+    color: #626b6e;
     font-weight: 400 !important;
     line-height: 15px;
     display: inline-block;
     padding-right: 16px;
     padding-bottom: 10px;
     padding-left: 10px;
+    text-transform: uppercase;
 }
 
 .header-item>i {
@@ -104,7 +127,7 @@ h1>a {
 }
 
 ul {
-    padding-left: 10px;
+    padding-left: 30px;
 }
 
 li {
@@ -114,6 +137,7 @@ li {
 li>span {
     display: block;
     margin-bottom: 12px;
+    font-weight: 600;
 }
 
 li>p {
@@ -122,36 +146,45 @@ li>p {
 }
 
 p {
-    padding-top: 10px;
-    padding-left: 30px;
+    margin-top: 0;
+    padding-left: 15px;
     padding-bottom: 20px;
 }
 
-.section>p {
+.section {
+    margin-bottom: 40px;
+}
+
+.section > h3 {
+    padding-bottom: 10px;
+} 
+
+.section > p {
     padding-top: 0;
     margin-top: 2px;
     margin-bottom: 30px;
 }
 
-.section>div {
+.section > div {
     margin-left: 10px;
     margin-top: 7px;
 }
 
 h3 {
+    font-family: "Varela round";
     color: #b2b4b6;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     line-height: 17px;
     border-bottom: 2px solid hsla(0, 0%, 72.5%, .2);
 }
 
-h4 {
-    font-size: 12px;
+h5 {
+    font-size: 15px;
     margin-top: 10px;
     margin-left: 10px;
-    font-weight: 100;
+    font-weight: 600;
     margin-bottom: 10px;
     display: inline-block;
 }
@@ -194,6 +227,7 @@ h4 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .card {
@@ -228,13 +262,15 @@ h4 {
 .cardInfo>h1 {
     margin: 0;
     margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 .cardInfo>p {
-    font-size: 14px;
+    font-size: 16px;
     margin: 0;
     padding: 0;
     color: #616161;
+    font-weight: 400;
 }
 
 .cardInfo>a {
@@ -245,10 +281,11 @@ h4 {
     border-radius: 50px;
     display: inline-flex;
     max-width: 150px;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
     overflow-wrap: break-word;
-    font-size: 13px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .cardInfo>a>i {
@@ -257,7 +294,7 @@ h4 {
 }
 
 .infoOpen {
-    max-height: 500px;
+    max-height: 700px;
     opacity: 1;
     margin-top: 10px;
 }
@@ -371,6 +408,14 @@ h4 {
 
 .vibes-logo {
     background-image: url(./images/icon_vibes.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+}
+
+.pickapp-logo {
+    background-image: url(./images/pickapp_logo.png);
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -544,7 +589,7 @@ h4 {
     margin-top: -40px;
 }
 
-.cloud>li {
+.cloud > li {
     background: #00a2ff;
     padding: 5px;
     color: white;
@@ -552,6 +597,7 @@ h4 {
     border-radius: 5px;
     padding-left: 10px;
     padding-right: 10px;
+    user-select: none;
 }
 
 .emojis {
