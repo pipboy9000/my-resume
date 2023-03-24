@@ -46,7 +46,7 @@ h4 {
 }
 
 h2 {
-    color: #B48F6B !important;
+    color: #e89545 !important;
     font-weight: 100;
     font-size: 28px;
     padding-right: 30px;
@@ -62,7 +62,7 @@ h1 {
     font-family: "Varela round", Arial, Helvetica, "Noto Sans Devanagari", "Noto Sans CJK SC Thin", "Noto Sans SC", "Noto Sans Hebrew", sans-serif !important;
     font-weight: 800;
     font-size: 42px;
-    color: #86b4de;
+    color: #76beff;
 }
 
 h1>a {
@@ -173,7 +173,7 @@ p {
 
 h3 {
     font-family: "Varela round";
-    color: #b2b4b6;
+    color: #7dadde;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 2px;
@@ -275,7 +275,7 @@ h5 {
 }
 
 .cardInfo>a {
-    background: #86b4de;
+    background: #75d3ff;
     text-decoration: none;
     color: white;
     padding: 10px;
@@ -287,6 +287,10 @@ h5 {
     overflow-wrap: break-word;
     font-size: 18px;
     font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    padding-left: 22px;
 }
 
 .cardInfo>a>i {
@@ -470,6 +474,17 @@ h5 {
     background-size: cover;
     position: absolute;
     background-size: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(125, 230, 181);
+}
+
+.agents-bg {
+    background-image: url(./images/1024_icon_notrans.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
     background-position: center;
     background-repeat: no-repeat;
     background-color: rgb(125, 230, 181);
