@@ -21,6 +21,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&family=Varela+Round&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=David+Libre:wght@700&family=IBM+Plex+Mono:wght@700&family=Inter:wght@200;400;500;700&family=Varela&display=swap"
+        rel="stylesheet">
 </head>
 
 <script type="text/javascript" src="./script.js" type="module"></script>
@@ -66,7 +70,10 @@
         <div class="section">
             <h3>SUMMARY</h3>
             <p>
-                Hi! I'm Dan, I like making apps and games.
+                Hey there, I'm Dan, a programmer specializing in crafting mobile apps, web apps, and games. I'm
+                all about turning imaginative concepts into captivating digital realities. From seamless mobile
+                experiences to feature-rich web interactions and immersive game worlds, I thrive on fusing creativity
+                with technology. Let's connect and bring extraordinary digital ideas to life!
             </p>
         </div>
     </div>
@@ -85,7 +92,7 @@
                     Need help moving forward with a project? I'm here to set you up, feel free to contact me at <a
                         href="mailto:dan784@gmail.com">dan784@gmail.com.</a> I Am currently Available for freelance
                     work, full time remote.
-                    My most recent stack is Flutter, Svelte, Tailwind CSS, Firebase App suite with NodeJS.
+                    My most recent stack is Flutter, Firebase App suite with NodeJS, Svelte, Tailwind CSS.
                 </p>
             </div>
             <div>
@@ -148,20 +155,36 @@
             </h3>
             <ul>
                 <li>
-                    <span>Programming:</span>
-                    <p>
-                        Flutter, Dart, Firebase, Javascript ES6, Svelte, Firebase, VueJS, Cordova, JavaEE, NodeJS,
-                        Unity3D
-                        SocketIO, MySQL, MongoDB,
-                        Couchbase.
-                    </p>
+                    <p class="skills-header">Programming:</p>
+                    <ul class="skills-cloud">
+                        <li>Flutter</li>
+                        <li>Dart</li>
+                        <li>Firebase App Suite + GCP</li>
+                        <li>Javascript</li>
+                        <li>ES6</li>
+                        <li>Svelte</li>
+                        <li>Webflow</li>
+                        <li>VueJS</li>
+                        <li>NodeJS</li>
+                        <li>JavaEE</li>
+                        <li>Unity3D</li>
+                        <li>SocketIO</li>
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                        <li>Couchbase</li>
+                    </ul>
                 </li>
                 <li>
-                    <span>Design:</span>
-                    <p>
-                        UX/UI, HTML/CSS, TailwindCSS, Photoshop, Illustrator, 3DMax.
-                    </p>
-
+                    <p class="skills-header">Design:</p>
+                    <ul class="skills-cloud">
+                        <li>UX/UI</li>
+                        <li>HTML/CSS</li>
+                        <li>TailwindCSS</li>
+                        <li>Photoshop</li>
+                        <li>Illustrator</li>
+                        <li>3DMax</li>
+                        <li>Blender</li>
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -318,33 +341,50 @@
                     </a>
                 </div>
             </div>
-            <h2>You can find out more about me through my blog and Stack Overflow profile</h2>
-            <div class="cardBtn" title="My Stack Overflow Profile">
-                <div class="card-bg">
+            <div class="card" onclick="cardClicked(this)">
+                <div class="cardBtn" title="Flutter Widget">
+                    <div class="toggle-bg" id="toggle-bg">
+                    </div>
                 </div>
-                <div class="card-content">
-                    <a href="https://stackoverflow.com/users/1606811/dan-levin" target="_blank">
-                        <div class="stack-logo"></div>
-                        <div class="card-details">
-                            <div class="so-rep">REPUTATION </br>
-                                <div id="so-rep">698</div>
-                            </div>
-                            <div class="badges">
-                                <div class="bronze" id="so-bronze" title="Bronze Badges">16</div>
-                                <div class="silver" id="so-silver" title="Silver Badges">7</div>
-                                <div class="gold" id="so-gold" title="Gold Badges">0</div>
-                            </div>
-                        </div>
+                <div class="cardInfo">
+                    <h1>Sliding Toggle Switch</h1>
+                    <p>
+                        A Sliding toggle button widget I made for Flutter
+                    </p>
+                    </br>
+                    <a href="https://pub.dev/packages/sliding_toggle_switch" target="_blank">
+                        Check it on Pub.dev
+                        <i class="fas fa-chevron-circle-right"></i>
                     </a>
                 </div>
             </div>
-            <div class="cardBtn" title="My Blog">
-                <a href="http://i-r-programmer.blogspot.com/" target="_blank">
-                    <div class="blogger-logo">
-
+            <h4>You can find out more about me through my blog and Stack Overflow profile</h2>
+                <div class="cardBtn" title="My Stack Overflow Profile">
+                    <div class="card-bg">
                     </div>
-                </a>
-            </div>
+                    <div class="card-content">
+                        <a href="https://stackoverflow.com/users/1606811/dan-levin" target="_blank">
+                            <div class="stack-logo"></div>
+                            <div class="card-details">
+                                <div class="so-rep">REPUTATION </br>
+                                    <div id="so-rep">718</div>
+                                </div>
+                                <div class="badges">
+                                    <div class="bronze" id="so-bronze" title="Bronze Badges">16</div>
+                                    <div class="silver" id="so-silver" title="Silver Badges">7</div>
+                                    <div class="gold" id="so-gold" title="Gold Badges">0</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="cardBtn" title="My Blog">
+                    <a href="http://i-r-programmer.blogspot.com/" target="_blank">
+                        <div class="blogger-logo">
+
+                        </div>
+                    </a>
+                </div>
         </div>
     </div>
 
@@ -401,11 +441,12 @@
             <i class="fas fa-info-circle" title="About"></i>
         </h3>
         <div class="section">
-            This resume was made with vanilla Javascript and deployed on Netlify.
-            </br>
-            </br>
-            You can even fork it from <a href="https://github.com/pipboy9000/my-resume" target="_blank">Github</a>
-            along with other projects I made you might find interesting.
+            <p>
+                This resume was made with vanilla Javascript and deployed on Netlify.
+                </br>
+                You can even fork it from <a href="https://github.com/pipboy9000/my-resume" target="_blank">Github</a>
+                along with other projects I made you might find interesting.
+            </p>
         </div>
     </div>
 </body>

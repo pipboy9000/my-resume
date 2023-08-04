@@ -8,8 +8,9 @@ body {
     align-items: center;
     flex-direction: column;
     margin: 0px;
-    font-family: 'Fredoka', sans-serif;
-    font-weight: 100;
+    /* font-family: 'Fredoka', sans-serif; */
+    font-family: 'Inter', sans-serif;
+    /* font-weight: 100; */
 }
 
 body::after {
@@ -32,7 +33,7 @@ body>div:nth-child(2) {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 60px;
+    padding: 55px;
     background: white;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -49,9 +50,10 @@ h2 {
     color: #e89545 !important;
     font-weight: 100;
     font-size: 28px;
-    padding-right: 30px;
+    padding-right: 170px;
     margin-top: 100px;
     margin-bottom: 60px;
+    font-family: "Varela";
 }
 
 .container > h2:first-of-type {
@@ -93,10 +95,14 @@ h1>a {
 .date {
     display: inline;
     margin-right: 10px;
+    color: #343434;
 }
 
 .header-items {
     padding-top: 20px;
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
 }
 
 .header-item {
@@ -128,6 +134,7 @@ h1>a {
 
 ul {
     padding-left: 30px;
+    padding-right: 30px;
 }
 
 li {
@@ -137,7 +144,8 @@ li {
 li>span {
     display: block;
     margin-bottom: 12px;
-    font-weight: 600;
+    font-weight: 100;
+    color: #343434;
 }
 
 li>p {
@@ -160,10 +168,16 @@ p {
     padding-bottom: 10px;
 } 
 
-.section > p {
+.section > p, .section > div > p {
     padding-top: 0;
     margin-top: 2px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
+    /* padding-right: 80px; */
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #595959;
+    font-family: "Varela";
 }
 
 .section > div {
@@ -185,7 +199,7 @@ h5 {
     font-size: 15px;
     margin-top: 10px;
     margin-left: 10px;
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 10px;
     display: inline-block;
 }
@@ -264,14 +278,16 @@ h5 {
     margin: 0;
     margin-bottom: 10px;
     margin-top: 20px;
+    font-size: 30px;
 }
 
 .cardInfo>p {
-    font-size: 16px;
+    font-size: 14px;
     margin: 0;
     padding: 0;
     color: #616161;
     font-weight: 400;
+    line-height: 26px;
 }
 
 .cardInfo>a {
@@ -489,6 +505,16 @@ h5 {
     background-repeat: no-repeat;
     background-color: rgb(125, 230, 181);
 }
+.toggle-bg {
+    background-image: url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcm9yeXN2OHV2bnU0cHp1NGw3aHA3M3l2ZHN3YWM0M3l3bnMxdDFldCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/e6LX8uOK6UA3kaL5Su/giphy.gif);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(125, 230, 181);
+}
 
 .blogger-logo {
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/3/31/Blogger.svg);
@@ -503,6 +529,7 @@ h5 {
 
 .more {
     text-align: center;
+        line-height: 40px;
 }
 
 .more > h3 {
@@ -586,7 +613,7 @@ h5 {
 
     .container {
         border-radius: 0;
-        /* padding: 20px; */
+        padding: 30px;
     }
 
     h1 {
@@ -612,7 +639,6 @@ h5 {
     flex-wrap: wrap;
     list-style: none;
     justify-content: center;
-    margin-top: -40px;
 }
 
 .cloud > li {
@@ -625,6 +651,38 @@ h5 {
     padding-right: 10px;
     user-select: none;
 }
+
+.skills-header {
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 0px;
+    display: block;
+    font-weight: 100;
+    color: #343434;
+}
+
+.skills-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    margin-bottom: 70px;
+    padding: 0;
+    
+}
+
+.skills-cloud > li {
+    background: #00a2ff;
+    padding: 5px;
+    color: white;
+    margin: 5px;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    user-select: none;
+}
+
+
 
 .emojis {
     display: flex;
@@ -797,3 +855,4 @@ textarea {
     width: 100%;
     height: 100%
 }
+
