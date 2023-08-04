@@ -301,12 +301,14 @@ h5 {
     align-items: baseline;
     justify-content: space-between;
     overflow-wrap: break-word;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
     align-items: center;
     justify-content: center;
-    padding: 14px;
-    padding-left: 22px;
+    padding: 10px;
+    padding-left: 24px;
+    padding-right: 16px;
+    line-height: 20px;
 }
 
 .cardInfo>a>i {
