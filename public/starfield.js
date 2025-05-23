@@ -1,7 +1,7 @@
 
 let ctx;
 let canvas;
-let scrollY = 0;
+// let scrollY = 0;
 
 let stars = [];
 
@@ -53,6 +53,6 @@ window.addEventListener('load', function () {
     init();
 });
 
-document.addEventListener('scroll', function (e) {
-    console.log(window.scrollY);
-});
+// document.addEventListener('scroll', function (e) {
+//     console.log(window.scrollY);
+// });
