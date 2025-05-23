@@ -17,7 +17,7 @@ function init() {
             y: Math.random() * canvas.height,
             speed: Math.random() / 1.5 + 0.1,
             opacity: op,
-            size: Math.random() * 3
+            size: Math.random() * 2
         });
     }
 

@@ -464,6 +464,10 @@ h5 {
     position: absolute;
 }
 
+#bubbles-card {
+    border-radius: 600px;
+}
+
 .mixtape-bg {
     width: 100%;
     height: 100%;
