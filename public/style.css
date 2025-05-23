@@ -431,6 +431,10 @@ h5 {
     color: white;
 }
 
+.enigmator-logo {
+    background: black;
+}
+
 .flamingo-decscription>a {
     color: white;
     text-decoration: none;
