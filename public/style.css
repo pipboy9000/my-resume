@@ -55,7 +55,7 @@ h2 {
     color: #e89545 !important;
     font-weight: 100;
     font-size: 28px;
-    padding-right: 170px;
+    /* padding-right: 170px; */
     margin-top: 100px;
     margin-bottom: 60px;
     font-family: "Varela";
@@ -655,6 +655,7 @@ h5 {
 
     h1 {
         margin-top: 5px;
+        font-size: 32px;
     }
 
     .profile-pic {
@@ -668,6 +669,10 @@ h5 {
     .cardBtn {
         width: 220px;
         height: 220px;
+    }
+
+    .header-items-container>h2 {
+        font-size: 32px;
     }
 }
 
